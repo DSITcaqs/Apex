@@ -11,13 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.full-width-image-banner {
+  background: url('./images/banner.jpg');
+  background-position: center center;  
+  background-size: cover;
+  min-width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+}
+
+.container-banner {
+  background-color: #1a170d;
+  padding: 30px;
+  text-align: center;
+}
+
+.logo-text-navbar {
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  color: #FFFFFF !important;
+}
+
+.href-navbar {
+  color: #FFFFFF;
+  font-size: 23px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+.full-width-image .bg-light {
+  background-color: transparent !important;
+}
+
 .full-width-image {
-  background: url('./images/imagen-home-principal.jpg');
-  background-position: center top;
+  background: url('./images/imagen-home-principal.jpeg');
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 600px;
+  opacity: 0.9;
 }
 
 .container-row-center {
@@ -43,6 +79,11 @@ code {
   font-size: 13px;
 }
 
+.buttons-home:hover {
+  border: 2px solid #837544;
+  background-color: #837544;
+}
+
 .title-home-container-principal {
   font-size: 15px;
   text-transform: uppercase;
@@ -53,29 +94,37 @@ code {
 }
 
 .text-description-container-principal {
-  font-size: 20px;
-  color: #e5e5e5;
+  font-size: 21px;
+  color: #FFFFFF;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto mono', monospace;
+  text-transform: uppercase;
 }
 
-.container-secondary-images {
+/* .container-secondary-images {
   height: 100%;
   padding: 15px;
   align-items: center;
   display: flex;
   justify-content: center;
+} */
+
+.container-secondary {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.container-secondary-text {
-  height: 100%;
-  padding: 15px;
-  align-items: center;
-  display: flex;
-  font-size: 20px;
-  color: #e5e5e5;
+.secondary-text {
+  color: #000000;
+  font-size: 17px;
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
+}
+
+.secondary-image {
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 .carousel-contenido {

@@ -3,13 +3,12 @@ import { Container, Row, Col, Button, Image, Card } from 'react-bootstrap';
 import NavbarComponent from '../navbar';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import SecondaryImage1 from '../../images/secondary-image1.jpg';
-import SecondaryImage2 from '../../images/secondary-image2.jpg';
-import SecondaryImage3 from '../../images/secondary-image1.jpg';
-import Card1 from '../../images/card1.jpeg';
-import Card2 from '../../images/card2.jpg';
-import Card3 from '../../images/card3.jpeg';
-import Card4 from '../../images/card4.jpg';
+import SectionOne from './section1';
+import BannerIndex from './banner';
+import Card1 from '../../images/card1.svg';
+import Card2 from '../../images/card2.svg';
+import Card3 from '../../images/card3.svg';
+import Card4 from '../../images/card4.svg';
 
 class HomeIndex extends Component {
   constructor(props) {
@@ -37,12 +36,13 @@ class HomeIndex extends Component {
   render() {
     return (
       <div>
-        <NavbarComponent active={this.state.expanded} />
         <div className='full-width-image'>
+          <NavbarComponent active={this.state.expanded} />
           <div className='container-row-center'>
             <div className='container-info'>
               <p className='title-home-container-principal'>Welcome to apex</p>
-              <p className='text-description-container-principal'>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis,
+              <p className='text-description-container-principal'>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit mollis,
                 pellentesque fringilla congue donec aptent sed porttitor,
                 malesuada litora scelerisque diam potenti integer risus.
                 Mattis tempor commodo fusce eros viverra aliquet nisl,
@@ -53,84 +53,7 @@ class HomeIndex extends Component {
             </div>
           </div>
         </div>
-        <Container>
-          <Row>
-            <Col md={6}>
-              <div className='container-secondary-images'>
-                <Image src={SecondaryImage1} fluid />
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className='container-secondary-text'>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sodales et,
-                  luctus fringilla odio blandit pulvinar lacinia sagittis scelerisque rutrum neque,
-                  non ante habitasse platea fames aliquam rhoncus velit.
-                  Lacus accumsan natoque convallis congue rhoncus id curabitur,
-                  pretium bibendum euismod iaculis pulvinar sociosqu mus vestibulum,
-                  potenti aptent cras pharetra aliquam nulla.
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
-              <div className='container-secondary-images'>
-                <Image src={SecondaryImage2} fluid />
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className='container-secondary-text'>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sodales et,
-                  luctus fringilla odio blandit pulvinar lacinia sagittis scelerisque rutrum neque,
-                  non ante habitasse platea fames aliquam rhoncus velit.
-                  Lacus accumsan natoque convallis congue rhoncus id curabitur,
-                  pretium bibendum euismod iaculis pulvinar sociosqu mus vestibulum,
-                  potenti aptent cras pharetra aliquam nulla.
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
-              <div className='container-secondary-images'>
-                <Image src={SecondaryImage3} fluid />
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className='container-secondary-text'>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sodales et,
-                  luctus fringilla odio blandit pulvinar lacinia sagittis scelerisque rutrum neque,
-                  non ante habitasse platea fames aliquam rhoncus velit.
-                  Lacus accumsan natoque convallis congue rhoncus id curabitur,
-                  pretium bibendum euismod iaculis pulvinar sociosqu mus vestibulum,
-                  potenti aptent cras pharetra aliquam nulla.
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
-              <div className='container-secondary-images'>
-                <Image src={SecondaryImage2} fluid />
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className='container-secondary-text'>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit sodales et,
-                  luctus fringilla odio blandit pulvinar lacinia sagittis scelerisque rutrum neque,
-                  non ante habitasse platea fames aliquam rhoncus velit.
-                  Lacus accumsan natoque convallis congue rhoncus id curabitur,
-                  pretium bibendum euismod iaculis pulvinar sociosqu mus vestibulum,
-                  potenti aptent cras pharetra aliquam nulla.
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+        <SectionOne />
         <div className='container-third'>
           <Container>
             <Row>
@@ -167,6 +90,7 @@ class HomeIndex extends Component {
               </Col>
             </Row>
           </Container>
+          <BannerIndex />
           <Container fluid>
             <Row style={{ padding: 25 }}>
               <Col md={3}>
