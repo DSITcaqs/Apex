@@ -40,16 +40,12 @@ class HomeIndex extends Component {
           <NavbarComponent active={this.state.expanded} />
           <div className='container-row-center'>
             <div className='container-info'>
-              <p className='title-home-container-principal'>Welcome to apex</p>
+              <p className='title-home-container-principal'>Creación de riqueza rediseñada.</p>
               <p className='text-description-container-principal'>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit mollis,
-                pellentesque fringilla congue donec aptent sed porttitor,
-                malesuada litora scelerisque diam potenti integer risus.
-                Mattis tempor commodo fusce eros viverra aliquet nisl,
-                congue mus eget nullam curae mauris rutrum, curabitur cras dui vitae consequat class.
+                 APEX FUNDS GROUP pretende ser una compañía líder en manejo de capital, que contribuye a un panorama de inversión más justo para México y para todo américa latina.
               </p>
-              <Button className='buttons-home'>Join apex</Button>
-              <Button className='buttons-home'>More info</Button>
+              <Button className='buttons-home'>Unete al Grupo</Button>
+              <Button className='buttons-home'>Más Información</Button>
             </div>
           </div>
         </div>
@@ -92,15 +88,14 @@ class HomeIndex extends Component {
           </Container>
           <BannerIndex />
           <Container fluid>
+            <h1>VENTAJAS DE APEX FUNDS</h1>
             <Row style={{ padding: 25 }}>
               <Col md={3}>
                 <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={Card1} />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the bulk of
-                      the card's content.
+                        Tasas de interés 3X más altas que cualquier banco.
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
@@ -110,10 +105,8 @@ class HomeIndex extends Component {
                 <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={Card2} />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the bulk of
-                      the card's content.
+                         Tres diferentes tipos de opciones de inversión, dando la oportunidad de retirar ganancias cada trimestre.
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
@@ -123,10 +116,8 @@ class HomeIndex extends Component {
                 <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={Card3} />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the bulk of
-                      the card's content.
+                       Contratos en dólares, protegiendo el capital contra devaluación de la moneda en México.
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
@@ -136,10 +127,10 @@ class HomeIndex extends Component {
                 <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={Card4} />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the bulk of
-                      the card's content.
+                       Contratos con la posibilidad de ser renovado año con año.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
