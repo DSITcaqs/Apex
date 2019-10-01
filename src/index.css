@@ -11,14 +11,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.full-width-image-banner {
-  background: url('./images/banner.jpg');
-  background-position: center center;  
+.container-form-contact-banner {
+  /* background-color: #837544; */
+  background-color: #61D081;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-contact-banner {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 0px;
+  color: #FFFFFF;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+.input-contact-banner::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1;
+  /* Firefox */
+}
+
+.input-contact-banner:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FFFFFF;
+}
+
+.input-contact-banner::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #FFFFFF;
+}
+
+.input-contact-banner:focus {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.button-contact-banner {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-color: #FFFFFF;
+  border-radius: 0px;
+  color: #FFFFFF;
+  height: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-contact-banner:hover{
+  background-color: #FFFFFF;
+  color: #000000;
+  border-color: #FFFFFF;
+}
+
+/* .full-width-image-banner {
+  background: url('./images/banner.png');
+  background-position: center center;
   background-size: cover;
   min-width: 100%;
   height: 250px;
   background-repeat: no-repeat;
-}
+} */
 
 .container-banner {
   background-color: #1a170d;
@@ -26,24 +89,26 @@ code {
   text-align: center;
 }
 
+.fixed-top {
+  background-color: rgba(0, 0, 0, .5) !important;
+}
+
 .logo-text-navbar {
   font-size: 25px;
-  letter-spacing: 2px;
-  font-weight: bold;
   font-family: 'Nunito', sans-serif;
   color: #FFFFFF !important;
 }
 
 .href-navbar {
-  color: #FFFFFF;
   font-size: 23px;
   padding: 10px;
-  font-weight: bold;
   font-family: 'Nunito', sans-serif;
+  color: #FFFFFF;
 }
 
-.full-width-image .bg-light {
-  background-color: transparent !important;
+.href-navbar:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 .full-width-image {
@@ -140,6 +205,10 @@ code {
   font-family: 'Nunito', sans-serif;
 }
 
+.container-info-cards .card {
+  text-align: center;
+}
+
 .container-third {
   background-color: #f2f2f2;
   padding-top: 50px;
@@ -158,4 +227,27 @@ code {
   height: 60px;
   text-align: center;
   margin-bottom: 0px;
+}
+
+.alice-carousel__dots, .alice-carousel__prev-btn, .alice-carousel__next-btn {
+  display: none !important;
+}
+
+.title-container-third {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.button-card {
+  border: 2px solid #837544 !important;
+  border-radius: 0px;
+  width: 100%;
+  background-color: transparent;
+  color: #837544;
+}
+
+.button-card:hover {
+  background-color: #837544;
 }

@@ -1,41 +1,32 @@
-import React, { Component } from 'react';
-import { Container, Row, Col, Button, Image, Card } from 'react-bootstrap';
+﻿import React, { Component } from 'react';
 import NavbarComponent from '../navbar';
-import AliceCarousel from 'react-alice-carousel';
-import "react-alice-carousel/lib/alice-carousel.css";
 import SectionOne from './section1';
 import BannerIndex from './banner';
-import Card1 from '../../images/card1.svg';
-import Card2 from '../../images/card2.svg';
-import Card3 from '../../images/card3.svg';
-import Card4 from '../../images/card4.svg';
+import CarouselComponent from './carousel';
+import CardsComponent from './cardsInfo';
+import BackgroundPrincipalComponent from './backgroundPrincipal';
+import Footer from './footer';
 
 class HomeIndex extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: 'home',
+
     }
-  }
-
-  responsive = {
-    0: { items: 1 },
-    1024: { items: 5 },
-  }
-
-  onSlideChange(e) {
-    console.debug('Item`s position during a change: ', e.item)
-    console.debug('Slide`s position during a change: ', e.slide)
-  }
-
-  onSlideChanged(e) {
-    console.debug('Item`s position after changes: ', e.item)
-    console.debug('Slide`s position after changes: ', e.slide)
   }
 
   render() {
     return (
       <div>
+<<<<<<< HEAD
+        <NavbarComponent active={this.state.expanded} />
+        <BackgroundPrincipalComponent />
+        <SectionOne />
+        <CarouselComponent />
+        <BannerIndex />
+        <CardsComponent />
+        <Footer />
+=======
         <div className='full-width-image'>
           <NavbarComponent active={this.state.expanded} />
           <div className='container-row-center'>
@@ -142,6 +133,7 @@ class HomeIndex extends Component {
         <div className='container-footer'>
           <p className='text-footer'>© 2019 All rights reserved - Apex</p>
         </div>
+>>>>>>> bbc2bbdf2a54979120e1d9ce89f7eb2b051fa231
       </div>
     );
   }

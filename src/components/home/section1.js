@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button, Image, Card } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import SecondaryImage1 from '../../images/card1.svg';
 import SecondaryImage2 from '../../images/card2.svg';
 import SecondaryImage3 from '../../images/card3.svg';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button, Image, Form } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 class BannerIndex extends Component {
   constructor(props) {
@@ -11,15 +11,20 @@ class BannerIndex extends Component {
 
   render() {
     return (
-      <Container fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
-        <Row>
-          <Col md={12}>
-            <div className='full-width-image-banner'>
-
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <div className='container-form-contact-banner'>
+        <Container>
+          <Row>
+            <Col md={2} />
+            <Col md={6}>
+              <Form.Control className="input-contact-banner" placeholder="Ingresa tu correo electronico" type="email" />
+            </Col>
+            <Col md={2}>
+              <Button className="button-contact-banner" variant="primary">Contactar</Button>
+            </Col>
+            <Col md={2} />
+          </Row>
+        </Container>
+      </div>
     );
   }
 }
