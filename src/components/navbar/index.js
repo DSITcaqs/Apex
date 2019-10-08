@@ -34,7 +34,9 @@ class NavbarIndex extends Component {
   render() {
     return (
       <Navbar bg="light" expand="lg" className='fixed-top'>
-        <Navbar.Brand className='logo-text-navbar' href="/home">APEX Funds Group</Navbar.Brand>
+        <Navbar.Brand href="/home">
+          <p className="logo-text-navbar">APEX Funds Group</p>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

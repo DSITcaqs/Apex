@@ -5,6 +5,7 @@ import BannerIndex from './banner';
 import CarouselComponent from './carousel';
 import CardsComponent from './cardsInfo';
 import BackgroundPrincipalComponent from './backgroundPrincipal';
+import Brokrage from './brokrage';
 import Footer from './footer';
 
 class HomeIndex extends Component {
@@ -22,6 +23,7 @@ class HomeIndex extends Component {
         <BackgroundPrincipalComponent />
         <SectionOne />
         <CarouselComponent />
+        <Brokrage />
         <BannerIndex />
         <CardsComponent />
         <Footer />

@@ -29,7 +29,7 @@ code {
   height: 50px;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   text-align: center;
 }
 
@@ -62,7 +62,7 @@ code {
   border-radius: 0px;
   color: #FFFFFF;
   height: 50px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 17px;
   text-transform: uppercase;
   font-weight: bold;
@@ -95,14 +95,14 @@ code {
 
 .logo-text-navbar {
   font-size: 25px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: #FFFFFF !important;
 }
 
 .href-navbar {
   font-size: 23px;
   padding: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: #FFFFFF;
 }
 
@@ -184,7 +184,7 @@ code {
   color: #000000;
   font-size: 17px;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .secondary-image {
@@ -202,7 +202,7 @@ code {
   font-size: 27px;
   color: #000;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .container-info-cards .card {
@@ -223,7 +223,7 @@ code {
   font-size: 18px;
   color: #e5e5e5;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   height: 60px;
   text-align: center;
   margin-bottom: 0px;
@@ -237,7 +237,7 @@ code {
   font-size: 25px;
   text-align: center;
   padding-top: 30px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .button-card {
@@ -250,4 +250,18 @@ code {
 
 .button-card:hover {
   background-color: #837544;
+}
+
+.title-brokrage {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.text-brokrage {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Roboto Mono', monospace;
 }
