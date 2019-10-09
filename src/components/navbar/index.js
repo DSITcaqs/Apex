@@ -45,7 +45,9 @@ class NavbarIndex extends Component {
           </Nav>
           <Nav pullRight>
             <NavLink className='href-navbar' to={'/home'}>Home</NavLink>
-            <NavLink className='href-navbar' to={'/contact'}>Contact</NavLink>
+            <NavLink className='href-navbar' to={'/nosotros'}>Nosotros</NavLink>
+            <NavLink className='href-navbar' to={'/productos'}>Productos</NavLink>
+            <NavLink className='href-navbar' to={'/contact'}>Contacto</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
