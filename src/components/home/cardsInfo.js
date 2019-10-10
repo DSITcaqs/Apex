@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import Card1 from '../../images/imagen-cards.jpeg';
-import Card2 from '../../images/imagen-cards.jpeg';
-import Card3 from '../../images/imagen-cards.jpeg';
-import Card4 from '../../images/imagen-cards.jpeg';
+import Card1 from '../../images/bombilla.svg';
+import Card2 from '../../images/calendario.svg';
+import Card3 from '../../images/reloj.svg';
+import Card4 from '../../images/bolsa-de-dinero.svg';
 
 class CardsIndex extends Component {
   constructor(props) {
@@ -21,10 +21,12 @@ class CardsIndex extends Component {
           <Col md={3}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Card1} />
+                <div className="container-image-card-green">
+                  <Card.Img variant="top" src={Card1} />
+                </div>
                 <Card.Body>
                   <Card.Text>
-                    Tasas de interés 3X más altas que cualquier banco.
+                    Tasas de interés 3X más altas que cualquier banco en México.
                   </Card.Text>
                 </Card.Body>
                 <Card.Body>
@@ -36,7 +38,9 @@ class CardsIndex extends Component {
           <Col md={3}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Card2} />
+                <div className="container-image-card-green">
+                  <Card.Img variant="top" src={Card2} />
+                </div>
                 <Card.Body>
                   <Card.Text>
                     Tres diferentes tipos de opciones de inversión, dando la oportunidad de retirar ganancias cada trimestre.
@@ -51,10 +55,12 @@ class CardsIndex extends Component {
           <Col md={3}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Card3} />
+                <div className="container-image-card-green">
+                  <Card.Img variant="top" src={Card3} />
+                </div>
                 <Card.Body>
                   <Card.Text>
-                    Contratos en dólares, protegiendo el capital contra devaluación de la moneda en México.
+                    Contratos con la posibilidad de ser renovado año a año.
                   </Card.Text>
                 </Card.Body>
                 <Card.Body>
@@ -66,10 +72,12 @@ class CardsIndex extends Component {
           <Col md={3}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={Card4} />
+                <div className="container-image-card-green">
+                  <Card.Img variant="top" src={Card4} />
+                </div>
                 <Card.Body>
                   <Card.Text>
-                    Contratos con la posibilidad de ser renovado año con año.
+                    Contratos en dólares, protegiendo el capital contra la devaluación de la moneda en México.
                   </Card.Text>
                 </Card.Body>
                 <Card.Body>

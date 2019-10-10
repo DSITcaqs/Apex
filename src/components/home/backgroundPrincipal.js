@@ -15,7 +15,7 @@ class BackgroundPrincipalIndex extends Component {
         <div className='container-row-center'>
           <div className='container-info'>
 
-            <p className='title-home-container-principal'>WELCOME TO</p>
+            <p className='title-home-container-principal'>BIENVENIDO A </p>
             <p className='text-description-container-principal'>APEX</p>
             <p className='subtext-description-container-principal'>Creación de riqueza rediseñada</p>
             <Button className='buttons-home'>Ver mas <Image src={Arrw} style={{width: 18, marginLeft: 5, marginTop: -3}} /></Button>

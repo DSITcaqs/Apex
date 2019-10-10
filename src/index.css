@@ -135,7 +135,7 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 
 .container-info {
   width: 500px;
-  padding: 20px;
+  padding: 35px;
   margin-left: 50px;
 }
 
@@ -168,6 +168,15 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
   font-weight: bold;
 }
 
+.container-image-card-green{
+ background-color: #61D081;
+ padding: 25px;
+}
+
+.container-image-card-green img{
+  width:100px;
+}
+
 .subtext-description-container-principal {
   font-family: 'Big Shoulders Text', cursive;
   font-size: 25px;
@@ -188,10 +197,15 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
   padding-bottom: 50px;
 }
 
+.secondary-title{
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .secondary-text {
   color: #000000;
   font-size: 17px;
-  font-weight: bold;
 }
 
 .secondary-image {
@@ -239,7 +253,8 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 }
 
 .title-container-third {
-  font-size: 25px;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 40px;
   text-align: center;
   padding-top: 30px;
 }
@@ -257,7 +272,8 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 }
 
 .title-brokrage {
-  font-size: 25px;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 50px;
   text-align: center;
   padding-top: 30px;
 }
