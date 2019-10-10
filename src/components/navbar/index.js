@@ -47,7 +47,7 @@ class NavbarIndex extends Component {
             <NavLink className='href-navbar' to={'/home'}>Home</NavLink>
             <NavLink className='href-navbar' to={'/nosotros'}>Nosotros</NavLink>
             <NavLink className='href-navbar' to={'/productos'}>Productos</NavLink>
-            <NavLink className='href-navbar' to={'/contact'}>Contacto</NavLink>
+            <NavLink className='href-navbar' to={'/contacto'}>Contacto</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
