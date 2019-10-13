@@ -13,13 +13,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.container-contact{
+  -webkit-box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.75);
+  padding:20px;
+}
+
+.label-contact {
+
+}
+
+.input-contact {
+
+}
+
+.tarjetas-info{
+  background: #FFFFFF;
+  height: 400px;
+}
+
+.tarjetas-info .card-footer{
+  background: #FFFFFF;
+}
+
 .container-form-contact-banner {
   /* background-color: #837544; */
-  background-color: #61D081;
-  height: 150px;
+  background-image: url("./images/banner-bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -112,7 +137,16 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 
 .href-navbar:hover {
   text-decoration: underline;
-  color: #FFFFFF;
+  color: #837544;
+}
+
+.container-plan{
+  background-color: #837544;
+  border-radius: 20px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .full-width-image {
@@ -124,6 +158,25 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
   height: 400px;
   opacity: 0.9;
   margin-top: 62px;
+}
+
+.steps-circle{
+  background-color: #837544;
+  color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.steps-title{
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .container-row-center {
@@ -159,6 +212,14 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
   font-size: 70px;
   font-weight: bold;
   margin-bottom: -30px;
+}
+
+.title-nosotros-container-principal { 
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 70px;
+  color: #FFFFFF;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 .text-description-container-principal {
@@ -236,14 +297,12 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 
 .container-footer {
   background-color: #212121;
-  padding-top: 25px;
+  padding: 10px;
 }
 
 .text-footer {
-  font-size: 18px;
+  font-size: 17px;
   color: #e5e5e5;
-  font-weight: bold;
-  height: 60px;
   text-align: center;
   margin-bottom: 0px;
 }

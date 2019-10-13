@@ -6,7 +6,7 @@ import CarouselComponent from './carousel';
 import CardsComponent from './cardsInfo';
 import BackgroundPrincipalComponent from './backgroundPrincipal';
 import Brokrage from './brokrage';
-import Footer from './footer';
+import Footer from '../footer';
 
 class HomeIndex extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class HomeIndex extends Component {
         <NavbarComponent active={this.state.expanded} />
         <BackgroundPrincipalComponent />
         <SectionOne />
-        <CarouselComponent />
+        {/*<CarouselComponent />*/}
         <Brokrage />
         <BannerIndex />
         <CardsComponent />

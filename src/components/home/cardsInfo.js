@@ -15,12 +15,12 @@ class CardsIndex extends Component {
 
   render() {
     return (
-      <Container fluid className='container-info-cards' style={{ backgroundColor: '#f2f2f2' }}>
+      <Container fluid className='container-info-cards'>
         <p className='title-container-third'>VENTAJAS DE APEX FUNDS</p>
         <Row style={{ padding: 25 }}>
           <Col md={3}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Card style={{ width: '18rem' }}>
+              <Card className="tarjetas-info" style={{ width: '18rem' }}>
                 <div className="container-image-card-green">
                   <Card.Img variant="top" src={Card1} />
                 </div>
@@ -29,15 +29,15 @@ class CardsIndex extends Component {
                     Tasas de interés 3X más altas que cualquier banco en México.
                   </Card.Text>
                 </Card.Body>
-                <Card.Body>
+                <Card.Footer>
                   <Button className='button-card' variant="primary">Ver mas</Button>
-                </Card.Body>
+                </Card.Footer>
               </Card>
             </div>
           </Col>
           <Col md={3}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Card style={{ width: '18rem' }}>
+              <Card className="tarjetas-info" style={{ width: '18rem' }}>
                 <div className="container-image-card-green">
                   <Card.Img variant="top" src={Card2} />
                 </div>
@@ -46,15 +46,15 @@ class CardsIndex extends Component {
                     Tres diferentes tipos de opciones de inversión, dando la oportunidad de retirar ganancias cada trimestre.
                   </Card.Text>
                 </Card.Body>
-                <Card.Body>
+                <Card.Footer>
                   <Button className='button-card' variant="primary">Ver mas</Button>
-                </Card.Body>
+                </Card.Footer>
               </Card>
             </div>
           </Col>
           <Col md={3}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Card style={{ width: '18rem' }}>
+              <Card className="tarjetas-info" style={{ width: '18rem' }}>
                 <div className="container-image-card-green">
                   <Card.Img variant="top" src={Card3} />
                 </div>
@@ -63,15 +63,15 @@ class CardsIndex extends Component {
                     Contratos con la posibilidad de ser renovado año a año.
                   </Card.Text>
                 </Card.Body>
-                <Card.Body>
+                <Card.Footer>
                   <Button className='button-card' variant="primary">Ver mas</Button>
-                </Card.Body>
+                </Card.Footer>
               </Card>
             </div>
           </Col>
           <Col md={3}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Card style={{ width: '18rem' }}>
+              <Card className="tarjetas-info" style={{ width: '18rem' }}>
                 <div className="container-image-card-green">
                   <Card.Img variant="top" src={Card4} />
                 </div>
@@ -80,9 +80,9 @@ class CardsIndex extends Component {
                     Contratos en dólares, protegiendo el capital contra la devaluación de la moneda en México.
                   </Card.Text>
                 </Card.Body>
-                <Card.Body>
+                <Card.Footer>
                   <Button className='button-card' variant="primary">Ver mas</Button>
-                </Card.Body>
+                </Card.Footer>
               </Card>
             </div>
           </Col>
