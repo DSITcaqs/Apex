@@ -13,6 +13,10 @@ class CardsIndex extends Component {
     }
   }
 
+  redirectProducts() {
+    this.props.data.history.push('/productos');
+  }
+
   render() {
     return (
       <Container fluid className='container-info-cards'>
@@ -30,7 +34,7 @@ class CardsIndex extends Component {
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button className='button-card' variant="primary">Ver mas</Button>
+                  <Button onClick={() => { this.redirectProducts() }} className='button-card' variant="primary">Ver mas</Button>
                 </Card.Footer>
               </Card>
             </div>
@@ -47,7 +51,7 @@ class CardsIndex extends Component {
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button className='button-card' variant="primary">Ver mas</Button>
+                  <Button onClick={() => { this.redirectProducts() }} className='button-card' variant="primary">Ver mas</Button>
                 </Card.Footer>
               </Card>
             </div>
@@ -64,7 +68,7 @@ class CardsIndex extends Component {
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button className='button-card' variant="primary">Ver mas</Button>
+                  <Button onClick={() => { this.redirectProducts() }} className='button-card' variant="primary">Ver mas</Button>
                 </Card.Footer>
               </Card>
             </div>
@@ -81,7 +85,7 @@ class CardsIndex extends Component {
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button className='button-card' variant="primary">Ver mas</Button>
+                  <Button onClick={() => { this.redirectProducts() }} className='button-card' variant="primary">Ver mas</Button>
                 </Card.Footer>
               </Card>
             </div>

@@ -31,10 +31,14 @@ class NavbarIndex extends Component {
     }
   }
 
+  redirectHome() {
+    this.props.data.history.push('/home');
+  }
+
   render() {
     return (
       <Navbar bg="light" expand="lg" className='fixed-top'>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand style={{ cursor: "pointer" }} onClick={() => { this.redirectHome() }}>
           <p className="logo-text-navbar">APEX Funds Group</p>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

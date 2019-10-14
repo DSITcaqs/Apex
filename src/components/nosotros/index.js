@@ -14,7 +14,7 @@ class NosotrosIndex extends Component {
   render() {
     return (
       <div>
-        <NavbarComponent active={this.state.expanded} />
+        <NavbarComponent active={this.state.expanded} data={this.props.data} />
         <div style={{ width: "100%", height: 250, backgroundColor: "#61D081", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <p className="title-nosotros-container-principal">Nosotros</p>
         </div>
@@ -44,7 +44,7 @@ class NosotrosIndex extends Component {
             </Col>
           </Row>
         </Container>
-        <div style={{ backgroundColor: "rgba(242,242,242)", padding: 20 }}>
+        {/* <div style={{ backgroundColor: "rgba(242,242,242)", padding: 20 }}>
           <Container>
             <Row>
               <Col md={6}>
@@ -77,7 +77,7 @@ class NosotrosIndex extends Component {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
         <FotterComponent />
       </div>
     );

@@ -19,13 +19,13 @@ class HomeIndex extends Component {
   render() {
     return (
       <div>
-        <NavbarComponent active={this.state.expanded} />
-        <BackgroundPrincipalComponent />
+        <NavbarComponent active={this.state.expanded} data={this.props.data} />
+        <BackgroundPrincipalComponent data={this.props.data} />
         <SectionOne />
         {/*<CarouselComponent />*/}
         <Brokrage />
         <BannerIndex />
-        <CardsComponent />
+        <CardsComponent data={this.props.data} />
         <Footer />
       </div>
     );

@@ -14,7 +14,7 @@ class ProductosIndex extends Component {
   render() {
     return (
       <div>
-        <NavbarComponent active={this.state.expanded} />
+        <NavbarComponent active={this.state.expanded} data={this.props.data} />
         <div style={{ width: "100%", height: 250, backgroundColor: "#61D081", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <p className="title-nosotros-container-principal">Productos</p>
         </div>

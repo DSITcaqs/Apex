@@ -16,12 +16,12 @@ class BannerIndex extends Component {
         <Container>
           <Row>
             <Col md={12}>
-              <p style={{ fontSize: 50, color: "#FFF", marginBottom: 0 }}>+6,000</p>
-              <p style={{ fontSize: 50, color: "#FFF" }}>MILLION IN 2019 SALLES</p>
+              <p style={{ fontSize: 50, color: "#FFF", marginBottom: 0 }}>+$6,000</p>
+              <p style={{ fontSize: 50, color: "#FFF" }}>Millones en ventas durante 2019</p>
 
-              <p style={{ fontSize: 20, color: "#FFF", marginBottom: 0 }}>We are a Private Equity Fund that invests in middle-market companies in Mexico and beyond bringing</p>
-              <p style={{ fontSize: 20, color: "#FFF", marginBottom: 0 }}>our network and experience to achieve high returns through capital gains by investing in a diversified portfotilio</p>
-
+              <p style={{ fontSize: 20, color: "#FFF", marginBottom: 0 }}>Somos un fondo de capital privadi que invierte en empresas del mercado en México,</p>
+              <p style={{ fontSize: 20, color: "#FFF", marginBottom: 0 }}>siempre considerando traer a nuestra red, experiencia para lograr altos retornos a tráves</p>
+              <p style={{ fontSize: 20, color: "#FFF", marginBottom: 0 }}>de ganancias de capital al invertir en un portafolio diversificado.</p>
             </Col>
           </Row>
         </Container>

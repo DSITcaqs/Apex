@@ -15,7 +15,7 @@ class ContactIndex extends Component {
   render() {
     return (
       <div>
-        <NavbarComponent active={this.state.expanded} />
+        <NavbarComponent active={this.state.expanded} data={this.props.data} />
         <Container fluid style={{ marginTop: 78 }}>
           <Row>
             <Col md={6}>

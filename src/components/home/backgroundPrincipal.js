@@ -9,6 +9,10 @@ class BackgroundPrincipalIndex extends Component {
     }
   }
 
+  redirectProducts() {
+    this.props.data.history.push('/productos');
+  }
+
   render() {
     return (
       <div className='full-width-image'>
@@ -18,7 +22,7 @@ class BackgroundPrincipalIndex extends Component {
             <p className='title-home-container-principal'>BIENVENIDO A </p>
             <p className='text-description-container-principal'>APEX</p>
             <p className='subtext-description-container-principal'>Creación de riqueza rediseñada</p>
-            <Button className='buttons-home'>Ver mas <Image src={Arrw} style={{width: 18, marginLeft: 5, marginTop: -3}} /></Button>
+            <Button className='buttons-home' onClick={() => { this.redirectProducts() }}>Ver mas <Image src={Arrw} style={{ width: 18, marginLeft: 5, marginTop: -3 }} /></Button>
             {/*<p className='title-home-container-principal'>Creación de riqueza rediseñada.</p>
             <p className='text-description-container-principal'>
               APEX FUNDS GROUP pretende ser una compañía líder en manejo de capital, que contribuye a un panorama de inversión más justo para México y para todo américa latina.
