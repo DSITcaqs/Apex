@@ -13,16 +13,6 @@ class NavbarIndex extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   window.onscroll = () => {
-  //     const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
-  //     if (this.state.currentScrollHeight != newScrollHeight) {
-  //       console.log(newScrollHeight)
-  //       this.setState({ currentScrollHeight: newScrollHeight })
-  //     }
-  //   }
-  // }
-
   _renderContent = () => {
     if (this.state.active === 'home') {
       return <Home />
@@ -49,9 +39,9 @@ class NavbarIndex extends Component {
           </Nav>
           <Nav pullRight>
             <NavLink className='href-navbar' to={'/home'}>Home</NavLink>
-            <NavLink className='href-navbar' to={'/nosotros'}>Nosotros</NavLink>
+            <NavLink className='href-navbar' to={'/nosotros'}>About</NavLink>
             <NavLink className='href-navbar' to={'/productos'}>Productos</NavLink>
-            <NavLink className='href-navbar' to={'/contacto'}>Contacto</NavLink>
+            <NavLink className='href-navbar' to={'/contacto'}>Join</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
