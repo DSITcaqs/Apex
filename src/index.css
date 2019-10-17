@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap');
+/*  */
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
 
 body {
   margin: 0;
@@ -114,6 +116,13 @@ code {
   text-align: center;
 }
 
+.container-why {
+  background-color: #e0e0e0;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+}
+
 .fixed-top {
   background-color: #FFFFFF !important;
   -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
@@ -122,7 +131,8 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 }
 
 .logo-text-navbar {
-  font-size: 16px;
+  font-size: 25px;
+  font-family: 'ABeeZee' !important;
   margin-bottom: 0px;
   color: #000000 !important;
 }
@@ -141,7 +151,7 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 }
 
 .container-plan{
-  background-color: #837544;
+  background-color: #54b36f;
   border-radius: 20px;
   height: 100px;
   display: flex;
@@ -194,11 +204,11 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 }
 
 .buttons-home {
-  border: 2px solid #61D081;
+  border: 2px solid #54b36f;
   text-align: center;
   padding: 10px 40px;
   border-radius: 0px;
-  background-color: #61D081;
+  background-color: #54b36f;
   text-transform: uppercase;
   font-size: 17px;
 }
@@ -225,13 +235,13 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
 
 .text-description-container-principal {
   font-family: 'Big Shoulders Text', cursive;
-  color: #61D081;
+  color: #54b36f;
   font-size: 70px;
   font-weight: bold;
 }
 
 .container-image-card-green{
- background-color: #61D081;
+ background-color: #54b36f;
  padding: 25px;
 }
 
@@ -300,6 +310,7 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
   background-color: #212121;
   padding: 10px;
   position: absolute;
+  width:100%;
 }
 
 .text-footer {
@@ -336,7 +347,7 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
   font-family: 'Big Shoulders Text', cursive;
   font-size: 50px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 .text-brokrage {

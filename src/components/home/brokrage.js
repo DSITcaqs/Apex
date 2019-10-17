@@ -16,8 +16,8 @@ class BrokageIndex extends Component {
         <Container style={{ padding: 30 }}>
           <Row>
             <Col md={6}>
-              <div style={{ display: "flex", justifyContent: "center", paddingTop: 30 }}>
-                <Image src={GlobalNextTrade} style={{ width: 300, height: 300 }} />
+              <div style={{ display: "flex", justifyContent: "center", paddingTop: 50 }}>
+                <Image src={GlobalNextTrade} style={{ width: 200, height: 200 }} />
               </div>
             </Col>
             <Col md={6}>
