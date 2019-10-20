@@ -8,6 +8,10 @@ import BackgroundPrincipalComponent from './backgroundPrincipal';
 import Brokrage from './brokrage';
 import Footer from '../footer';
 
+//CQ:
+import ProductosSimples from './productos_simple';
+import WhyApex from './whyApex';
+
 class HomeIndex extends Component {
   constructor(props) {
     super(props);
@@ -21,11 +25,14 @@ class HomeIndex extends Component {
       <div>
         <NavbarComponent active={this.state.expanded} data={this.props.data} />
         <BackgroundPrincipalComponent data={this.props.data} />
+        <CardsComponent data={this.props.data} />
+        <ProductosSimples />
         <SectionOne />
         {/*<CarouselComponent />*/}
-        <Brokrage />
-        <BannerIndex />
-        <CardsComponent data={this.props.data} />
+        {/*<Brokrage />*/}
+        {/*<BannerIndex />*/}
+        <WhyApex />
+
         <Footer />
       </div>
     );

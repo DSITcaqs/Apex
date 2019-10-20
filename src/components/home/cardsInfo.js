@@ -18,7 +18,7 @@ class CardsIndex extends Component {
   }
 
   render() {
-    return (
+    return ( //#54b36f verde
       <Container fluid className='container-info-cards'>
         <p className='title-container-third'>VENTAJAS DE APEX FUNDS</p>
         <Row style={{ padding: 25 }}>

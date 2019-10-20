@@ -19,7 +19,6 @@ class BackgroundPrincipalIndex extends Component {
         <div className='container-row-center'>
           <div className='container-info'>
             <p className='title-home-container-principal'>BIENVENIDO A APEX</p>
-            {/*<p className='text-description-container-principal'>APEX</p>*/}
             <p className='subtext-description-container-principal'>Rediseñando la manera de invertir tu patrimonio.</p>
             <Button className='buttons-home' onClick={() => { this.redirectProducts() }}>Ver mas <Image src={Arrw} style={{ width: 18, marginLeft: 5, marginTop: -3 }} /></Button>
           </div>
