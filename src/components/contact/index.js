@@ -3,6 +3,8 @@ import { Container, Row, Col, Form, Image } from 'react-bootstrap';
 import NavbarComponent from '../navbar';
 import Contact from '../../images/contactanos.jpg';
 import FotterComponent from '../footer';
+//
+
 
 class ContactIndex extends Component {
   constructor(props) {
@@ -26,7 +28,7 @@ class ContactIndex extends Component {
             </Col>
             <Col md={6}>
               <div style={{ padding: 50 }}>
-                <Form className="container-contact">
+                <Form className="container-contact" >
                   <Form.Group>
                     <Form.Label className="label-contact">Nombre completo</Form.Label>
                     <Form.Control
@@ -91,7 +93,10 @@ class ContactIndex extends Component {
                       onChange={(planinteres) => { this.setState({ planinteres: planinteres.target.value }) }}
                     />
                   </Form.Group>
+
+
                 </Form>
+
               </div>
             </Col>
           </Row>
