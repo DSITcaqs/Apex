@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Form, Image } from 'react-bootstrap';
+import { Container, Row, Col, Form, Image, Button, Dropdown } from 'react-bootstrap';
 import NavbarComponent from '../navbar';
 import Contact from '../../images/contactanos.jpg';
 import FotterComponent from '../footer';
-//
 
 
 class ContactIndex extends Component {
@@ -11,7 +10,12 @@ class ContactIndex extends Component {
     super(props);
     this.state = {
       active: 'contact',
+      planSelect: 'Plan moderado'
     }
+  }
+
+  sendEmail() {
+    alert("Programando...");
   }
 
   render() {
@@ -66,22 +70,18 @@ class ContactIndex extends Component {
                     />
                   </Form.Group>
                   <Form.Group>
-                    <Form.Label className="label-contact">Monto estimado para invertir</Form.Label>
-                    <Form.Control
-                      type="text"
-                      className="input-contact"
-                      value={this.state.montoestimado}
-                      onChange={(montoestimado) => { this.setState({ montoestimado: montoestimado.target.value }) }}
-                    />
-                  </Form.Group>
-                  <Form.Group>
                     <Form.Label className="label-contact">Plan interesado</Form.Label>
-                    <Form.Control
-                      type="text"
-                      className="input-contact"
-                      value={this.state.planinteres}
-                      onChange={(planinteres) => { this.setState({ planinteres: planinteres.target.value }) }}
-                    />
+                    <Dropdown>
+                      <Dropdown.Toggle variant="success" id="dropdown-basic">
+                        {this.state.planSelect}
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        <Dropdown.Item onClick={() => { this.setState({ planSelect: "Plan moderado" }) }}>Plan moderado</Dropdown.Item>
+                        <Dropdown.Item onClick={() => { this.setState({ planSelect: "Plan activo" }) }}>Plan activo</Dropdown.Item>
+                        <Dropdown.Item onClick={() => { this.setState({ planSelect: "Plan proactivo" }) }}>Plan proactivo</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </Form.Group>
                   <Form.Group>
                     <Form.Label className="label-contact">Comentarios</Form.Label>
@@ -93,8 +93,9 @@ class ContactIndex extends Component {
                       onChange={(planinteres) => { this.setState({ planinteres: planinteres.target.value }) }}
                     />
                   </Form.Group>
-
-
+                  <Button onClick={() => { this.sendEmail() }}>
+                    Send email
+                  </Button>
                 </Form>
 
               </div>

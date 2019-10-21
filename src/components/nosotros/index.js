@@ -44,6 +44,7 @@ class NosotrosIndex extends Component {
             </Col>
           </Row>
         </Container>
+        <div style={{ height: 150 }} />
         {/* <div style={{ backgroundColor: "rgba(242,242,242)", padding: 20 }}>
           <Container>
             <Row>
