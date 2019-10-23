@@ -10,12 +10,47 @@ class ContactIndex extends Component {
     super(props);
     this.state = {
       active: 'contact',
-      planSelect: 'Plan moderado'
+      planinteres: 'Plan moderado',
+      nombrecompleto: '',
+      correoelectronico: '',
+      telefono: '',
+      pais: '',
+      comentarios: '',
     }
   }
 
   sendEmail() {
-    alert("Programando...");
+    const templateId = 'template_Geboo36s';
+    if (this.state.planinteres !== "" && this.state.pais !== "" && + this.state.telefono !== "" && this.state.comentarios !== "") {
+      this.sendFeedback(
+        templateId,
+        {
+          message_html: 'Me interesa el: ' + this.state.planinteres + ' , soy del país: ' + this.state.pais + ' .Tambien te anexo mi numero telefonico: ' + this.state.telefono + ' Comentarios: ' + this.state.comentarios,
+          from_name: this.state.nombrecompleto,
+          reply_to: this.state.correoelectronico
+        }
+      );
+    } else {
+      alert('Verify the information, there are empty fields.');
+    }
+  }
+
+  sendFeedback(templateId, variables) {
+    const self = this;
+    window.emailjs.send(
+      'gmail', templateId,
+      variables
+    ).then(res => {
+      alert('Email successfully sent!');
+      self.setState({
+        planinteres: 'Plan moderado',
+        nombrecompleto: '',
+        correoelectronico: '',
+        telefono: '',
+        pais: '',
+        comentarios: '',
+      });
+    }).catch(err => alert('Oh well, you failed. Here some thoughts on the error that occured:'))
   }
 
   render() {
@@ -73,13 +108,13 @@ class ContactIndex extends Component {
                     <Form.Label className="label-contact">Plan interesado</Form.Label>
                     <Dropdown>
                       <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        {this.state.planSelect}
+                        {this.state.planinteres}
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item onClick={() => { this.setState({ planSelect: "Plan moderado" }) }}>Plan moderado</Dropdown.Item>
-                        <Dropdown.Item onClick={() => { this.setState({ planSelect: "Plan activo" }) }}>Plan activo</Dropdown.Item>
-                        <Dropdown.Item onClick={() => { this.setState({ planSelect: "Plan proactivo" }) }}>Plan proactivo</Dropdown.Item>
+                        <Dropdown.Item onClick={() => { this.setState({ planinteres: "Plan moderado" }) }}>Plan moderado</Dropdown.Item>
+                        <Dropdown.Item onClick={() => { this.setState({ planinteres: "Plan activo" }) }}>Plan activo</Dropdown.Item>
+                        <Dropdown.Item onClick={() => { this.setState({ planinteres: "Plan proactivo" }) }}>Plan proactivo</Dropdown.Item>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Form.Group>
@@ -89,8 +124,8 @@ class ContactIndex extends Component {
                       as="textarea"
                       rows="3"
                       className="input-contact"
-                      value={this.state.planinteres}
-                      onChange={(planinteres) => { this.setState({ planinteres: planinteres.target.value }) }}
+                      value={this.state.comentarios}
+                      onChange={(comentarios) => { this.setState({ comentarios: comentarios.target.value }) }}
                     />
                   </Form.Group>
                   <Button onClick={() => { this.sendEmail() }}>

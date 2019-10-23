@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
-import ImageBanner from "../../images/banner-bottom.jpg";
+import { Container, Row, Col } from 'react-bootstrap';
 
 class BannerIndex extends Component {
   constructor(props) {
